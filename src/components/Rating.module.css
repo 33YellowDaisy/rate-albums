@@ -1,0 +1,24 @@
+.radioContainer {
+  display: inline;
+}
+
+.button {
+clear: both;
+  display: block;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  margin: 1rem;
+  border: solid;
+  border-radius: 8px;
+  border-color: darkblue;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}

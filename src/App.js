@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+import {useState} from 'react';
 import './App.css';
+import AlbumList from './components/AlbumList';
 
+//hier brauchen wir den state, ob das Modal angezeigt werden soll: modalIsVisible
+
+//fallsModalisVisible conditional in der AlbumList anzeigen
+
+//Handler der modalIsVisible setzt 
 function App() {
+
+  const [modalIsVisible, setModalIsVisible] = useState(false);
+
+  function openModalHandler() {
+    setModalIsVisible(true);
+  }
+
+  function closeModalHandler() {
+    setModalIsVisible(false);
+  }
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AlbumList onOpenModal={openModalHandler} onCloseModal={closeModalHandler} isRating={modalIsVisible}/>
   );
 }
 
