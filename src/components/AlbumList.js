@@ -1,7 +1,5 @@
 import React from "react";
 import Album from "./Album";
-import Modal from "./Modal";
-import Rating from "./Rating";
 
 function AlbumList({ onOpenModal, onCloseModal, isRating }) {
   const albums = [

@@ -3,7 +3,7 @@ import { useState } from "react";
 import classes from "./Album.module.css";
 import Modal from "./Modal";
 import Rating from "./Rating";
-//Test
+
 
 function Album({ title, year, color }) {
   const [modalIsVisible, setModalIsVisible] = useState(false);
