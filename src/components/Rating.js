@@ -19,7 +19,7 @@ function Rating({onCloseModal, onRating}) {
         <button className={classes.button} type="button" onClick={onCloseModal}>
           Abbruch
         </button>
-        <button className={classes.button} onClick={onRating}> Bewerten</button>
+        <button className={classes.button} onClick={(event) => onRating(event)}> Bewerten</button>
       </div>
     </>
   );

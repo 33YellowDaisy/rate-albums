@@ -9,19 +9,8 @@ import AlbumList from './components/AlbumList';
 //Handler der modalIsVisible setzt 
 function App() {
 
-  const [modalIsVisible, setModalIsVisible] = useState(false);
-
-  function openModalHandler() {
-    setModalIsVisible(true);
-  }
-
-  function closeModalHandler() {
-    setModalIsVisible(false);
-  }
-
-
   return (
-    <AlbumList onOpenModal={openModalHandler} onCloseModal={closeModalHandler} isRating={modalIsVisible}/>
+    <AlbumList  />
   );
 }
 

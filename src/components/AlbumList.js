@@ -27,11 +27,7 @@ function AlbumList({ onOpenModal, onCloseModal, isRating }) {
 
   return (
     <>
-      {isRating && (
-        <Modal onCloseModal={onCloseModal}>
-          <Rating onCloseModal={onCloseModal}></Rating>
-        </Modal>
-      )}
+    
 
       <ul>
         {albums.map((album, idx) => (
